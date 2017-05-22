@@ -1,0 +1,80 @@
+// Results
+
+#results
+    padding: 1rem 0
+    +bp('min-width: 20em')
+        padding: 0 1rem
+    .header
+        .title
+            +font-size(16px)
+            color: $gray
+            display: inline-block
+            font-weight: 300
+            strong
+                color: $green
+        .display
+            .list
+                +clear
+                list-style: none
+                .item
+                    float: left
+                    margin-right: .5rem
+                    &:last-child
+                        margin-right: 0
+                    &.toggle-sidebar-item
+                        display: none
+                        +bp('max-width: 800px')
+                            display: block
+                    .link
+                        color: $green
+                        text-decoration: none
+                        &:hover
+                            color: $blue
+                            text-decoration: underline
+                    .mode
+                        appearance: none
+                        background: none
+                        border: 0
+                        &:hover
+                            cursor: pointer
+    .products
+        +bp('max-width: 630px')
+            [class*="col-4"]
+                width: 50%
+        &.list
+            [class*="col-4"]
+                width: 100%
+                .product
+                    +clear
+                    background: $white
+                    width: 100%
+                    .on-sale
+                        z-index: 20
+                    .img
+                        width: rem(130px)
+                    .content
+                        background: none
+                        display: inline-block
+                        height: 100%
+                        padding: 1rem 2rem
+                        position: relative
+                        text-align: left
+                        vertical-align: bottom
+                        width: calc(100% - #{rem(130px)})
+                        .title
+                            margin-bottom: 1rem
+                        .price
+                            display: inline-block
+                            position: relative
+                            left: 0
+                            transform: none
+#search
+    +bp('max-width: 800px')
+        [class*="col-3"],
+        [class*="col-9"]
+            width: 100%
+        [class*="col-3"]
+            &.hide
+                display: none
+            &.show
+                display: block

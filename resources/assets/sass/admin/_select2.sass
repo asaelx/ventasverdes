@@ -1,0 +1,37 @@
+// Select2
+
+.select2-container
+    &.select2-container--focus
+        .select2-selection
+            border-color: $primary
+            box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15)
+    .select2-selection
+        border: .1rem solid #c4c9d3
+        border-radius: .2rem
+        transition: all .2s ease
+        padding: .2rem
+        .select2-selection__rendered
+            padding: 0
+            .select2-selection__choice
+                margin: .2rem
+                background: $border
+                border: 0
+                padding: .4rem .8rem
+                color: $graydark
+                font-size: 1.4rem
+                border-radius: .2rem
+                .select2-selection__choice__remove
+                    float: right
+                    margin-left: .5rem
+        .select2-search
+            margin: 0
+            padding: .4rem .8rem
+            .select2-search__field
+                margin: 0
+    .select2-results
+        .select2-results__options
+            .select2-results__option
+                margin: 0
+.select2-dropdown
+    border-color: $primary
+    box-shadow: 0 0 0 0.2rem rgba(87, 100, 198, 0.15)

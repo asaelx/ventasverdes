@@ -1,0 +1,88 @@
+// Checkout
+
+#checkout
+    padding: 2rem 0
+    .section-title
+        +font-size(24px)
+        color: $title
+        font-weight: 300
+        margin: 0
+    .title
+        +font-size(18px)
+        color: $title
+        font-weight: 300
+        margin: 0
+        margin-bottom: 1rem
+    .summary
+        .title
+            +font-size(14px)
+        .totals
+            margin-top: 1rem
+            text-align: right
+            .price
+                +font-size(16px)
+                color: $green
+            #submit
+                +font-size(14px)
+.label-radio
+    background: $white
+    border-radius: rem(3px)
+    box-shadow: 0 0 4px 3px rgba($black, 0.1)
+    display: block
+    padding: 2rem 3rem 2rem 2rem
+    position: relative
+    &:hover
+        background: $cloud
+        cursor: pointer
+    .check
+        display: none
+        position: absolute
+        top: 50%
+        right: 2rem
+        transform: translateY(-50%)
+    p
+        line-height: 1.5
+        margin-bottom: .5rem
+        &:last-of-type
+            margin-bottom: 0
+.radio
+    display: none
+    &:checked + .label-radio
+        background: lighten($green, 55)
+        .check
+            display: block
+#shipping_form
+    background: $cloud
+    border-radius: rem(3px)
+    box-shadow: 0 0 4px 3px rgba($black, 0.1)
+    display: none
+    padding: 2rem
+    position: relative
+.payment-method
+    margin-top: 2rem
+    .method-form
+        display: none
+        &[data-payment="card"]
+            display: block
+        .info
+            background: $cloud
+            border: 2px solid $gray
+            border-radius: rem(3px)
+            color: $title
+            padding: 2rem 1rem
+#card-details
+    background: $cloud
+    border-radius: rem(3px)
+    box-shadow: 0 0 4px 3px rgba($black, 0.1)
+    display: none
+    padding: 2rem
+    position: relative
+.billing
+    margin-top: 2rem
+#billing_form
+    background: $cloud
+    border-radius: rem(3px)
+    box-shadow: 0 0 4px 3px rgba($black, 0.1)
+    display: none
+    padding: 2rem
+    position: relative

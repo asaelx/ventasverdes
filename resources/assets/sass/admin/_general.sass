@@ -1,0 +1,92 @@
+// General
+
+.money
+    font-weight: bold
+    color: $success
+
+.empty
+    .typcn
+        font-size: 4rem
+
+.panel
+    background: $white
+    padding: 2rem
+    margin-bottom: 2rem
+    &:last-child
+        margin: 0
+
+.btn-success
+    background: $success
+    border: 1px solid $success
+    color: $white
+    &:hover
+        background: darken($success, 5)
+        border: 1px solid $success
+
+.btn-danger
+    background: $danger
+    border: 1px solid $danger
+    color: $white
+    &:hover
+        background: darken($danger, 5)
+        border: 1px solid $danger
+
+.preview
+    .column
+        position: relative
+        &:hover
+            .typcn-delete
+                display: block
+        .typcn-delete
+            display: none
+            color: $danger
+            font-size: 3rem
+            position: absolute
+            top: -.8rem
+            right: 0
+            &:hover
+                cursor: pointer
+.main-cover
+    position: relative
+    height: 15rem
+    &.dashboard
+        background: url('../img/dashboard-cover.jpg') center center / cover
+    &.pages
+        background: url('../img/pages-cover.jpg') center center / cover
+    &.menus
+        background: url('../img/menus-cover.jpg') center center / cover
+    &.categories
+        background: url('../img/categories-cover.jpg') center center / cover
+    &.characteristics
+        background: url('../img/characteristics-cover.jpg') center center / cover
+    &.boxes
+        background: url('../img/boxes-cover.jpg') center center / cover
+    &.products
+        background: url('../img/products-cover.jpg') center center / cover
+    &.orders
+        background: url('../img/orders-cover.jpg') center center / cover
+    &.sellers
+        background: url('../img/sellers-cover.jpg') center center / cover
+    &.questions
+        background: url('../img/questions-cover.jpg') center center / cover
+    &.reviews
+        background: url('../img/reviews-cover.jpg') center center / cover
+    &.addresses
+        background: url('../img/addresses-cover.jpg') center center / cover
+    &.settings
+        background: url('../img/settings-cover.jpg') center center / cover
+    &:before
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: linear-gradient(rgba($white, 0), rgba($black, .7))
+        content: ''
+    .img-responsive
+        width: 100%
+    h3
+        position: absolute
+        bottom: 0
+        left: 2rem
+        color: $white

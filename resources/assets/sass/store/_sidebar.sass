@@ -1,0 +1,40 @@
+// Sidebar
+
+#sidebar
+    padding: 1rem 0
+    +bp('min-width: 20em')
+        padding: 1rem
+    .section
+        margin-bottom: 1.5rem
+        &.price
+            padding-right: 4rem
+            +bp('min-width: 20em')
+                padding-right: 1rem
+        .title
+            +font-size(13px)
+            color: $gray
+            font-weight: 300
+            margin-bottom: 1rem
+        .list
+            list-style: none
+            &.radio
+                input[type="radio"]
+                    margin-right: .3rem
+                    &:checked + .text
+                        color: $blue
+                        cursor: pointer
+                        text-decoration: underline
+            .item
+                margin-bottom: .5rem
+                .link,
+                .text
+                    +font-size(14px)
+                    background: none
+                    border: 0
+                    color: $green
+                    font-family: $sans
+                    text-decoration: none
+                    &:hover
+                        color: $blue
+                        cursor: pointer
+                        text-decoration: underline

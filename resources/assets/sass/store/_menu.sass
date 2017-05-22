@@ -1,0 +1,22 @@
+// Menu
+
+#menu
+    background: $cloud
+    border-bottom: 1px solid $border
+    border-top: 1px solid $border
+    +bp('max-width: 960px')
+        padding: 0 1rem
+    .list
+        +clear
+        list-style: none
+        .item
+            float: left
+            margin-right: 1rem
+            .link
+                color: $gray
+                text-decoration: none
+                line-height: 2em
+                &:hover
+                    color: $green
+                    text-decoration: underline
+                    transition: all .3s ease-in-out

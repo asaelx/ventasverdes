@@ -1,0 +1,19 @@
+// Featured Products
+
+#featured-products
+    padding: 1rem 0
+    +bp('max-width: 800px')
+        padding: 0 1rem
+        [class*="col-3"]
+            width: calc(100% / 3)
+            &:last-child
+                display: none
+    +bp('max-width: 670px')
+        [class*="col-3"]
+            width: 50%
+            &:last-child
+                display: block
+    .section-title
+        +font-size(20px)
+        color: $gray
+        font-weight: 300

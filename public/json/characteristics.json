@@ -1,0 +1,36 @@
+{
+    "characteristics": [
+        {
+            "title": "Orgánico",
+            "description": "Productos que no utilizan químicos en su producción y están certificados."
+        },
+        {
+            "title": "Agroecológicos",
+            "description": "Productos que no utilizan químicos en su producción."
+        },
+        {
+            "title": "Naturales",
+            "description": "Productos de origen natural."
+        },
+        {
+            "title": "Ahorro energético",
+            "description": "Productos eficientes (focos ahorradores), energía alternativa."
+        },
+        {
+            "title": "Energía alternativa",
+            "description": "Productos (paneles solares, calentadores solares, energía eólica)."
+        },
+        {
+            "title": "Reciclados",
+            "description": "Productos hechos a base de residuos."
+        },
+        {
+            "title": "Reúso",
+            "description": "Productos seminuevos."
+        },
+        {
+            "title": "Vegano",
+            "description": "No contiene productos de origen animal ni derivados."
+        }
+    ]
+}

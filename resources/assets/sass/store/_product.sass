@@ -1,0 +1,46 @@
+// Product
+
+.product
+    border-radius: rem(2px)
+    box-shadow: 0 4px 8px 0 rgba($black, .2)
+    display: block
+    overflow: hidden
+    position: relative
+    .on-sale
+        display: inline-block
+        background: $green
+        color: $white
+        position: absolute
+        top: 1.5rem
+        right: -2.3rem
+        padding: .5rem 2.5rem
+        transform: rotate(45deg)
+    .img
+        width: 100%
+    .content
+        background: rgba($white, .9)
+        border-radius: 0 0 rem(2px) rem(2px)
+        bottom: 0
+        left: 0
+        padding: 1.5rem .5rem 1rem
+        position: absolute
+        text-align: center
+        width: 100%
+        .title
+            +font-size(13px)
+            color: $title
+            font-weight: 300
+            line-height: 1.3em
+            text-transform: uppercase
+        .price
+            background: $green
+            border-radius: rem(3px)
+            left: 50%
+            position: absolute
+            top: 0
+            transform: translate(-50%, -70%)
+            .amount
+                +font-size(14px)
+                color: $white
+                display: block
+                padding: .8rem 1rem

@@ -1,0 +1,48 @@
+// Cart
+
+#cart
+    padding: 2rem 0
+    min-height: 25rem
+    .empty
+        background: $cloud
+        padding: 2rem
+        .title
+            +font-size(20px)
+            color: $title
+            margin-bottom: 2rem
+        .text
+            +font-size(16px)
+            color: $text
+            .link
+                color: $green
+                text-decoration: none
+                &:hover
+                    color: $blue
+                    text-decoration: underline
+    .section-title
+        +font-size(24px)
+        color: $title
+        font-weight: 300
+        margin: 0
+    .qty
+        +font-size(16px)
+        background: $white
+        border: 1px solid $border
+        border-radius: rem(2px)
+        color: $text
+        font-family: $sans
+        padding: 1rem 1.2rem
+        width: rem(100px)
+    .summary
+        +font-size(18px)
+        background: $background
+        border-radius: rem(3px)
+        padding: 1rem
+        text-align: right
+        .title
+            color: $title
+        .price
+            color: $green
+        .place-order
+            .btn
+                +font-size(18px)

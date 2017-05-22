@@ -1,0 +1,38 @@
+// Datatables
+
+.dataTables_wrapper
+    .dataTables_length,
+    .dataTables_info
+        float: left
+        padding: 1rem 0
+    .dataTables_length
+        .form-select
+            min-width: auto
+    .dataTables_filter,
+    .dataTables_paginate
+        float: right
+        padding: 1rem 0
+        .form-input
+            margin-left: 1rem
+            width: auto
+    .dataTables_paginate
+        .paginate_button:first-child
+            margin-right: 1rem
+    .table
+        .sorting_asc,
+        .sorting_desc
+            background: $graydark
+            color: $white
+            cursor: pointer
+            &:hover
+                background: $graydark
+        .sorting:hover
+            background: $graylight
+            cursor: pointer
+            color: $dark
+            transition: background .3s ease-in-out
+        .sorting,
+        .sorting_asc,
+        .sorting_desc
+            &:active
+                background: $dark

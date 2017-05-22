@@ -1,0 +1,51 @@
+// ionRangeSlider
+
+.irs
+    height: 55px
+.irs-hidden-input
+    appearance: none
+.irs-line
+    height: rem(5px)
+    top: rem(33px)
+    background: $orange
+    border-radius: rem(16px)
+    .irs-line-left,
+    .irs-line-mid,
+    .irs-line-right
+        height: rem(4px)
+.irs-bar
+    height: rem(5px)
+    top: rem(33px)
+    background: $green
+.irs-slider
+    top: rem(25px)
+    width: rem(20px)
+    height: rem(20px)
+    border: 1px solid $white
+    background: $green
+    border-radius: rem(10px)
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3)
+    cursor: pointer
+    &.state_hover,
+    &:hover
+        background: lighten($green, 5)
+.irs-min,
+.irs-max
+    +font-size(12px)
+    color: $white
+    line-height: 1.3em
+    text-shadow: none
+    top: 0
+    padding: .2rem .5rem
+    background: $text
+    border-radius: rem(3px)
+.irs-from,
+.irs-to,
+.irs-single
+    +font-size(12px)
+    color: $white
+    line-height: 1.3em
+    text-shadow: none
+    padding: .2rem .5rem
+    background: $green
+    border-radius: rem(3px)

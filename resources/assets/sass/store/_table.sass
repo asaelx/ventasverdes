@@ -1,0 +1,54 @@
+// Table
+
+.table
+    border-collapse: collapse
+    border-radius: rem(3px)
+    box-shadow: 0 4px 8px 0 rgba($black, .2)
+    overflow: hidden
+    width: 100%
+    thead
+        background: $green
+        tr
+            th
+                +font-size(16px)
+                color: $white
+                font-weight: 300
+                text-align: left
+    tbody,
+    tfoot
+        tr
+            background: $border
+            &:nth-child(odd)
+                background: $cloud
+            td
+                +font-size(15px)
+                color: $text
+    tr
+        th,
+        td
+            padding: 1rem 1.5rem
+            .photo
+                border-radius: rem(3px)
+                box-shadow: 0 4px 8px 0 rgba($black, .2)
+                display: inline-block
+                height: rem(70px)
+                overflow: hidden
+                position: relative
+                width: rem(70px)
+                .img
+                    left: 50%
+                    position: absolute
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    width: 100%
+            .price
+                color: $green
+                white-space: nowrap
+            .link
+                color: $title
+                text-decoration: none
+                &:hover
+                    color: $green
+                    text-decoration: underline
+            .delete-form
+                display: inline-block
